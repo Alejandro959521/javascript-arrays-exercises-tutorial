@@ -3,4 +3,16 @@ let counts = {};
 
 // Your code here
 
-console.log(counts);
+
+
+for (let i=0;i<par.length;i++){
+            let letra=par[i].toLowerCase();
+           
+           if (letra== " ") continue;
+           else if (counts[letra]) {
+           counts[letra]=counts[letra]+1
+           }
+           
+        else  counts[letra]=1;
+}
+console.log(counts)
