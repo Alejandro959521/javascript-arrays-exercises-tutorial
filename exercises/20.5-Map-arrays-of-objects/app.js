@@ -36,6 +36,6 @@ let simplifier = function(person) {
 };
 
 console.log(people.map(simplifier));
-let currentDate = new Date();
-console.log(currentDate);
-console.log(person.birthDate.getFullYear())
+ let currentDate = new Date();
+ console.log(currentDate);
+// console.log(person.birthDate.getFullYear())
