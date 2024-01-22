@@ -10,22 +10,28 @@ let allColors = [
 
 function generateLI(color) {
 	// Your code here
+
+	return `<li>${color.label}</li>`
 }
 
 function filterColors(color) {
 	// Your code here
+	if (color.sexy == true ) return color.label
+	
+
 }
 
 function generateHTMLFromArray(array) {
 	
 	let filteredOptions = array.filter((filterColors));
+	console.log(filteredOptions)
 	let LIs = filteredOptions.map(generateLI);
-
+	console.log(LIs)
 	let htmlString = '<ul>';
 	LIs.forEach(function(element) {
 		htmlString += element;
 	})
-	htmlString += '</ul>';
+	htmlString += '</ul>' ;
 	return htmlString;
 }
 
