@@ -9,4 +9,6 @@ let tasks = [
 	{ label: 'Make a trip', done: false }
 ];
 
+const array = tasks.filter(value => value.done==true)
 // Your code here
+console.log(array)
